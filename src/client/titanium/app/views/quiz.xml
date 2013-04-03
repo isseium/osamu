@@ -1,0 +1,17 @@
+<Alloy>
+    <Window class="container">
+        <View id="question_container">
+            <Label class="frame">
+                <Label id="question">
+                    This is question.
+                </Label>
+            </Label>
+            <Label id="wrong_mark">×</Label>
+            <Label id="right_mark">○</Label>
+        </View>
+        <Button id="option1" class="option" title="Option1" />
+        <Button id="option2" class="option" title="Option2" />
+        <Button id="option3" class="option" title="Option3" />
+        <Button id="option4" class="option" title="Option4" />
+    </Window>
+</Alloy>

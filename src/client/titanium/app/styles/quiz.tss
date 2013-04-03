@@ -1,0 +1,40 @@
+".container": {
+    backgroundColor: 'white',
+    layout:'vertical',
+},
+"#question_container": {
+    height: '50%',
+},
+"#question": {
+    width: '90%',
+    height: '90%',
+},
+"#wrong_mark": {
+    top: "-25px",
+    font: {
+        fontSize: '224dp',
+        fontWeight: 'bold'
+    },
+},
+"#right_mark": {
+    top: "5px",
+    font: {
+        fontSize: '172dp',
+        fontWeight: 'bold'
+    },
+},
+".option": {
+    top: '5px',
+    width: '90%',
+    font: {
+        fontSize: '18dp',
+        fontWeight: 'bold'
+    },
+},
+".frame": {
+    top: '10dp',
+    layout:'vertical',
+    borderWidth: 2,
+    borderColor: "black",
+    borderRadius: 5,
+},

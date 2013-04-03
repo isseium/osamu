@@ -1,0 +1,32 @@
+".container": {
+    backgroundColor: "white"
+},
+"#table": {
+    contentHeight:'auto',
+    layout:'horizontal',
+    width: "90%",
+},
+".row": {
+    top: "10px",
+    width: "50%",
+    layout:'vertical',
+}
+".frame": {
+    layout:'vertical',
+    borderWidth: 2,
+    borderColor: "black",
+    borderRadius: 5,
+},
+".badge_picture": {
+    width: "80%"
+},
+".badge_icon":{
+},
+"#dashboard":{
+    width: "90%",
+}
+".spacer":{
+    layout:'vertical',
+    width: "90%",
+    height: "90%",
+}

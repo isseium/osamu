@@ -1,0 +1,50 @@
+<Alloy>
+    <Window class="container">
+        <DashboardView id="dashboard">
+            <DashboardItem class="badge_icon">
+                <View class="spacer">
+                    <ImageView image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
+                    <Label>hgoehoge</Label>
+                </View>
+            </DashboardItem>
+            <DashboardItem class="badge_icon">
+                <View class="spacer">
+                    <ImageView image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
+                    <Label>hgoehoge</Label>
+                </View>
+            </DashboardItem>
+            <DashboardItem class="badge_icon">
+                <View class="spacer">
+                    <ImageView image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
+                    <Label>hgoehoge</Label>
+                </View>
+            </DashboardItem>
+            <DashboardItem class="badge_icon">
+                <View class="spacer">
+                    <ImageView image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
+                    <Label>hgoehoge</Label>
+                </View>
+            </DashboardItem>
+            <!--
+            <DashboardItem image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png" badge="10" label="account" />
+            -->
+        </DashboardView>
+        
+        <!--
+        <ScrollView id="table">
+            <View class="row">
+                <Label class="frame">
+                    <ImageView class="badge_picture" image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
+                </Label>
+                <Label class="title">のびすけバッジ</Label>
+            </View>
+            <View class="row">
+                <Label class="frame">
+                    <ImageView class="badge_picture" image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
+                </Label>
+                <Label class="title">のびすけバッジ</Label>
+            </View>
+        </ScrollView>
+        -->
+    </Window>
+</Alloy>
