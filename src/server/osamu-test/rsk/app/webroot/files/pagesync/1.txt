@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>調整さん (beta)- 簡単みんなのスケジュール調整ツール</title>
+<meta name="keywords" content="スケジュール,調整,会議,飲み会,打ち合わせ,イベント,簡単,みんな" />
+
+<META NAME="GOOGLEBOT" CONTENT="NOINDEX, NOFOLLOW" />
+<meta name="robots" content="noindex, nofollow, noarchive">
+
+<link rel="stylesheet" href="/schedule_/www/ChouseiSan/style.css" type="text/css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-799005-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+<div id="container">
+
+<div id="banner" style="padding-bottom:10px">
+	<div style="float:left"><h1><a href="/schedule"><img src="/schedule_/www/ChouseiSan/logo.gif" border="0" alt="調整さん"/></a><br /><img src="/schedule_/www/ChouseiSan/recruit.gif" /></h1></div>
+	<div class="desc" style="margin-left:30px;float:left">簡単みんなのスケジュール調整ツール。<br />今日も効率よくスケジュールを決めましょう。</div>
+	<div style="clear:both"></div>
+</div>
+
+
+<div id="right">
+<div class="sidebar">
+
+	<h6>MENU</h6>
+	<div class="link-note">
+	<ul>
+	<li><a href="/schedule/newEvent">イベント新規作成</a></li>
+	</ul>
+	</div>
+	<div id="toiandkiyaku">
+	<ul>
+	<li><a href="/schedule/toi?h=e6d5da8b5231d7fc199458b627e1cf48">問い合わせ・ご要望</a></li>
+	<li><a href="/schedule/kiyaku?h=e6d5da8b5231d7fc199458b627e1cf48">利用規約</a></li>
+	</ul>
+	</div>
+</div><!-- close tag for sidebar -->
+</div><!-- close tag for right -->
+
+<div id="center" style="overflow:visible">
+
+
+<div class="content">
+
+
+<script type="text/javascript" language="javascript" src="/schedule_/www/ChouseiSan/prototype.js"></script>
+<script type="text/javascript" language="javascript" src="/schedule_/www/ChouseiSan/scriptaculous/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" language="javascript">
+<!--//
+
+function add (){
+	$('edit').style.display = 'block';
+	$('add_btn').style.display = 'none';
+	$('f').action = '/schedule/List/add';
+	$('f_block_name').style.display = 'block';
+	$('f_title').innerHTML = '出欠を新規登録する';
+	$('edit_delete').style.display = 'none';
+	fillin();
+	Element.scrollTo('edit');
+}
+
+function edit (id,obj,del_flg){
+	$('edit').style.display = 'block';
+	$('add_btn').style.display = 'block';
+	$('f').action = '/schedule/List/update?id=' + id;
+	$('f_title').innerHTML = obj.name + 'さんの出欠編集';
+	if(del_flg){
+		$('edit_delete').style.display = 'block';
+		$('fd').action = '/schedule/List/delete?id=' + id;
+		$('fd_submit').value = 'あるいは' + obj.name + 'さんを削除';
+	}
+	fillin(obj);
+	Element.scrollTo('edit');
+}
+
+function fillin (obj){
+	if(!obj) obj = {};
+	$('f_name').value = obj.name.unescapeHTML() || '';
+	var arr_kouho = (obj.kouho)? obj.kouho
+		: new Array(1);
+	for (var i=1; i<=arr_kouho.length; i++){
+		var idx = 0;
+		var p   = arr_kouho[i-1];
+		if     (p == '○') idx = 1;
+		else if(p == '△') idx = 2;
+		$('f_kouho' + i).selectedIndex = idx;
+	}
+	$('f_hitokoto').value = obj.hitokoto.unescapeHTML() || '';
+}
+
+//-->
+</script>
+
+<h2 class="navi">SCHEDULE</h2>
+<div class="entry">
+<div class="honmon">
+<div id="eventHead">
+<div id="eventheadcontents">
+<h3>IS研健康ゼミ-卓球大会の出欠確認</h3>
+
+
+</div></div>
+<h4>イベントの詳細説明</h4>
+<p>卓球大会やります！<br />
+<br />
+だいたいの人数把握したいので参加できるかたは記入お願いします！</p>
+<h4>候補日程   <span id="pr" style="font-size: 0.7em;"><a href="http://atnd.org/events/new?utm_source=chouseisan&amp;utm_medium=text&amp;utm_campaign=newevent" target="_blank">[PR]公開イベントの日程が決まったら？→ATNDでイベント告知</a><a href="http://atnd.org/?utm_source=chouseisan&amp;utm_medium=text&amp;utm_campaign=about" target="_blank">（ATNDとは？）</a></span></h4>
+<p style="color:#666666;font-size:0.8em">※各自の出欠状況を変更するには名前のリンクをクリックしてください。</p>
+<table cellpadding="8" cellspacing="0" border="0" style="text-align:center; margin:10px 30px 10px 30px; background-color:#fff" id="nittei">
+<tr>
+	<td style="text-align:left;border-bottom:1px solid #ddd" valign="top">日程</td>
+	<td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(1,{&quot;name&quot;:&quot;のびすけ&quot;,&quot;kouho&quot;:[&quot;○&quot;],&quot;hitokoto&quot;:&quot;勝つぞ！(ｵｩ&quot;},1)">のびすけ</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(2,{&quot;name&quot;:&quot;B3中村&quot;,&quot;kouho&quot;:[&quot;○&quot;],&quot;hitokoto&quot;:&quot;頑張りたいと思います！よろしくお願いします！&quot;},1)">B3中村</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(3,{&quot;name&quot;:&quot;りゅうのしん&quot;,&quot;kouho&quot;:[&quot;○&quot;],&quot;hitokoto&quot;:&quot;一回は勝ちたいです&quot;},1)">りゅうのしん</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(4,{&quot;name&quot;:&quot;１高田&quot;,&quot;kouho&quot;:[&quot;○&quot;],&quot;hitokoto&quot;:&quot;１勝くらいはしたいです。あ、一応道具はあるので。&quot;},1)">１高田</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(5,{&quot;name&quot;:&quot;菊地&quot;,&quot;kouho&quot;:[&quot;○&quot;],&quot;hitokoto&quot;:&quot;トーナメントは出なくていいので適当に打ったりしたいです。&quot;},1)">菊地</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(6,{&quot;name&quot;:&quot;おつくつん&quot;,&quot;kouho&quot;:[&quot;○&quot;],&quot;hitokoto&quot;:&quot;おれがチャンピオンだ！&quot;},1)">おつくつん</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(7,{&quot;name&quot;:&quot;test&quot;,&quot;kouho&quot;:[&quot;×&quot;],&quot;hitokoto&quot;:&quot;&quot;},1)">test</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(8,{&quot;name&quot;:&quot;ほげら１&quot;,&quot;kouho&quot;:[&quot;△&quot;],&quot;hitokoto&quot;:&quot;あああ&quot;},1)">ほげら１</a></td><td valign="top" style="border-bottom:1px solid #ddd"><a href="javascript:edit(9,{&quot;name&quot;:&quot;ほげ２&quot;,&quot;kouho&quot;:[&quot;×&quot;],&quot;hitokoto&quot;:&quot;こめんとテスト&quot;},1)">ほげ２</a></td>
+</tr>
+
+	
+	<tr>
+	<td style="text-align:left;border-bottom:1px solid #ddd" valign="top">5/10(木) 18:00〜</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">○</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">○</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">○</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">○</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">○</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">○</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">×</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">△</td>
+	
+	<td valign="top" style="border-bottom:1px solid #ddd">×</td>
+	
+	</tr>
+
+<tr>
+	<td style="text-align:left;border-bottom:1px solid #ddd" valign="top">コメント</td>
+	<td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">勝つぞ！(ｵｩ</td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">頑張りたいと思います！よろしくお願いします！</td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">一回は勝ちたいです</td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">１勝くらいはしたいです。あ、一応道具はあるので。</td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">トーナメントは出なくていいので適当に打ったりしたいです。</td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">おれがチャンピオンだ！</td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;"></td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">あああ</td><td valign="top" style="font-size:0.7em;border-bottom:1px solid #ddd;width:80px;i">こめんとテスト</td>
+</tr>
+</table>
+<div style="clear:both"></div>
+<p style="margin-top:20px"><input type="button" id="add_btn" value="出欠を新規登録する" onclick="add()" /></p>
+<div id="edit" style="display:none">
+<form method="post" id="f" action="">
+<h3><span id="f_title"></span></h3>
+<div id="f_block_name">
+<h4>名前</h4>
+<p><font size="-2">個人が特定し得る内容は入力しないでください。</font><br /><input type="text" id="f_name" name="name" value="" width="150"/></p>
+</div>
+<h4>候補</h4>
+<table cellpadding="5" cellspacing="0" border="0" style="margin: 0px 20px 0px 20px">
+
+<tr>
+<td>5/10(木) 18:00〜</td>
+<td><select name="kouho" id="f_kouho1">
+<option value="×" >×</option>
+<option value="○" >○</option>
+<option value="△" >△</option>
+</select></td>
+</tr>
+
+</table>
+<h4>コメント</h4>
+<p><font size="-2">個人が特定し得る内容は入力しないでください。</font><br /><input type="text"  name="hitokoto" width="150" id="f_hitokoto" value=""></textarea></p>
+<p></p>
+<p><input type="submit" name="add" value="　更　新　" /></p>
+<input type="hidden" name="h" value="e6d5da8b5231d7fc199458b627e1cf48" />
+
+</form>
+<div id="edit_delete" style="display:none">
+	<form method="post" id="fd" action="">
+	<p style="text-align:right">
+	<input type="submit" id="fd_submit" value="" />
+	<input type="hidden" name="h" value="e6d5da8b5231d7fc199458b627e1cf48" />
+	</p>
+	</form>
+</div>
+</div>
+
+<p style="margin-top:20px;color:#666666;font-size:0.8em">※注意：一ヶ月誰も更新しなかったイベントは自動的に削除されます。<br />
+※イベント再編集は、イベント新規作成したパソコン・ブラウザでのみ可能です。</p>
+<h3>このイベントのURL</h3>
+<p style="text-align:center;padding:30px;font-size:0.8em"><input type="text" value="http://chouseisan.com/schedule/List?h=e6d5da8b5231d7fc199458b627e1cf48" style="width: 70%; font-size:0.8em" onclick="this.select();"  /></p>
+<p style="padding:30px;text-align:center"><a href="http://www.hotpepper.jp/doc/kanji/?vos=cphppallcap0111024019" target="_blank" onclick="javascript: pageTracker._trackPageview('/ad/cap_list'); "><img src="/schedule_/www/ChouseiSan/ad_kanji_395x60.jpg" width="395" height="60" alt="スマート幹事くん" /></a></p>
+</div>
+<!-- close tag for  id="honmon" -->
+</div><!-- close tag for  id="entry" -->
+
+<script type="text/javascript" language="javascript">
+<!--//
+/* イベント日程の候補を色づけする */
+function irozuke(){
+	var tbl = document.getElementById("nittei");
+	for (var i=1;i<tbl.rows.length;i++){
+		var tr = tbl.rows[i];
+		var cnt = 0;
+		for (var j=1;j<tr.cells.length;j++){
+			var cel = tr.cells[j];
+			if(cel.innerHTML == "○"){
+				cnt += 2;
+			} else if(cel.innerHTML == "△"){
+				cnt += 1;
+			}
+		}
+		//何パーセントの○率かを出す
+		var ratio = cnt / ((tr.cells.length - 1) * 2);
+		//alert(ratio);
+		if(ratio == 1){
+			tr.bgColor = "#99CC00";
+		}else if(ratio >= 0.7){
+			tr.bgColor = "#D8FF62";
+		}
+	}
+}
+irozuke();
+//-->
+</script>
+
+
+
+</div><!-- close tag for content -->
+</div><!-- close tag for center -->
+
+<div id="footer" class="footer">
+	
+<ul id="copyright">
+<li id="recruit"><a href="http://www.recruit.co.jp/" target="_blank"><img src="http://www.recruit.co.jp/corporate/shared/crrecruit.gif" alt="リクルート" /></a></li>
+<li id="mtl"><a href="http://mtl.recruit.co.jp/" target="_blank"><img src="/schedule_/www/ChouseiSan/mtl.png" width="176" height="46" alt="Media Technology Labs" /></a></li>
+</ul>
+</div>
+
+<div style="clear: both;"></div>
+</div> <!-- close tag for container -->
+<!-- ADNETWORK by RAO リターゲタグ配信用 開始 -->
+
+
+<script type="text/javascript">
+
+
+document.writeln('<sc'+'ript language="JavaScript" type="text/javascript" src="'+location.protocol+'//cdn.c-team.jp/ran/r/chouseisan/chouseisan.js"></sc'+'ript>');
+
+
+</script>
+
+
+<!-- ADNETWORK by RAO リターゲタグ配信用 終了 -->
+</body>
+</html>
+

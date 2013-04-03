@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<html lang="ja">
+    <head>
+    	<?php echo $html->charset();?>
+    	<?php echo $html->meta('icon', '../icon/rental.ico'); ?>
+        <title>
+        <?php echo $title_for_layout;//タイトル,省略の場合はクラス名 ?>
+        </title>
+		<?php echo $html->css('bootstrap'); //bootstrap 2012-8-29 bootstrap v2.1.0 ?>
+		<?php echo $html->css('kmake2'); //kmake ?>
+		<?php //echo $html->css('popupwindow'); //アラート用 ?>
+       	<?php echo $this->Html->script('jquery-1.7.min'); //jquery本体 ?>
+       	<?php echo $this->Html->script('bootstrap'); //bootstrap ?>
+       	<?php //echo $this->Html->script('popupwindow'); //アラート用 ?>
+    </head>
+    <body>
+    <div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<ul class="nav pull">
+				<li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li>								
+				<!--<li><a href="index">借りる</a></li>
+				<!--<li><a href="request">申請中</a></li>
+				<li class="active"><a href="index">物品一覧</a></li>-->
+				<!--<li><a href="toReturn">返す</a></li>
+				<li><a href="lend">貸す</a></li>-->
+			</ul>
+			<ul class="nav pull-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					</a>
+					<!--<ul class="dropdown-menu">
+						<li><a href="myItem">自分の持ち物</a></li>
+						<li><a href="setting">アカウント設定</a></li>
+						<li><a href="help">ヘルプ</a></li>
+						<li class="divider"></li>
+						<li><a href="logout">ログアウト</a></li>
+					</ul>-->
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+    
+    <div class="wrapper">
+    	<div class="container-fluid">
+    		<div class="row-fluid">
+    			<div class="span1 well">
+    				<a target="_blank" href="http://n0.x0.to/rsk/kmake2/"><img src="https://twimg0-a.akamaihd.net/profile_images/1182958704/9a09649f-0b54-4c57-8c91-60d76cbcabfa.jpg" /> </a>
+			   		
+    				<h1 style="font:bold 30px 'Times New Roman';">Kentei Maker 2<small> ver.β</small></h1>    			
+    				<div class="alert alert-block alert-success">
+					</div>
+    			</div>
+    			<div class="span10">
+    			<?php echo $content_for_layout;?>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <script type="text/javascript" language="javascript">
+		<!--
+		//facebookのURLの末尾に#_=_が入るので対処
+		if(document.URL.match(/#_=_/)){
+			location.href='http://n0.x0.to/rsk/rentals/index';
+		}
+		// -->
+	</script>
+    </body>
+</html>
