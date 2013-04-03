@@ -12,7 +12,6 @@ button_start_quiz.addEventListener('click', function(){
     $.nav.open(window_badges);
 });
 
-
 $.win.leftNavButton = button_badges;
 $.win.rightNavButton = button_start_quiz;
 

@@ -1,0 +1,10 @@
+<Alloy>
+    <Window id="_badge" class="container">
+        <DashboardItem id="badge_item" class="badge_icon">
+            <View class="spacer">
+                <ImageView id="image" image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
+                <Label id="name" />
+            </View>
+        </DashboardItem>
+    </Window>
+</Alloy>
