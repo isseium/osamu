@@ -1,5 +1,9 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+    <Window class="container">
+        <NavigationGroup id="nav" platform="ios">
+            <Window id="win" title="震災のキオク">
+                <ImageView image="http://map.olp.yahooapis.jp/OpenLocalPlatform/V1/static?appid=buxd.Puxg662idT4Kd8LGdoNWBKywhPDbp4dfPupYfrbu.0ICiES_bkM9iImHA--&lat=38.2&lon=140.6&z=9&height=1600&width=600&mode=blankmap&style=bm.p.03201:999999" />
+            </Window>
+        </NavigationGroup>
+    </Window>
 </Alloy>
