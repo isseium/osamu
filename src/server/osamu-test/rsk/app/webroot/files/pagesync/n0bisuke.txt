@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="http://www.hoge.com/styles.css" />
+
+	<script type="text/javascript" src="http://www.hoge.com/js/jquery-1.3.2.min.js"></script>
+
+
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+	function showHide(div, tab, height)
+	{
+		var tabs = new Array('aboutus', 'products', 'process', 'store', 'request', 'contact');
+		var divs = new Array('mymenu1', 'mymenu2', 'mymenu3', 'mymenu4', 'mymenu5', 'mymenu6');
+		document.getElementById(div).style.display="block";
+		document.getElementById(div).style.background="#7A83A4";
+		document.getElementById(div).style.width="174px";
+		document.getElementById(div).style.height="" + height + "px";
+		document.getElementById(tab + "_button").style.background="url('http://www.hoge.com/images/" + tab + "_on.jpg')";
+		for(i=0; i < tabs.length; i++){
+			if(divs[i] != div && tabs[i] != tab){
+				document.getElementById(divs[i]).style.display="none";
+				document.getElementById(tabs[i] + "_button").style.background="url('http://www.hoge.com/images/" + tabs[i] + "_off.jpg')";
+				
+			}
+		}
+		
+	}
+
+
+
+
+
+//-->
+</script>
+</head>
+<body>
+
+<div id="head" class="wrapper">
+	<a href="http://www.hoge.com"><img src="http://www.hoge.com/images/header.jpg" /></a>
+</div>
+<div id="cont" class="wrapper">
+	<div id="right_col">
+
+<div class="index_news">
+	<img style="margin-bottom: -3px;" src="images/news_header.jpg" />
+	<div id="news_fill">
+				<h1>One size does not fit all.</h1>
+		<p>
+						
+			HOGE BUILDINGS:
+Customized design for your requirements.&nbsp; ... 
+		<p>
+		<a href="news.php?item=17">click for more</a>
+		<hr />		<h1>20%                                 </h1>
+		<p>
+						
+			 ... 
+		<p>
+		<a href="news.php?item=9">click for more</a>
+		<hr />		<h1>35 Lb STEEL RAIL for sale</h1>
+		<p>
+						
+			&nbsp;&nbsp; USED RAIL
+&nbsp;7,200 feet&nbsp;&nbsp; &nbsp;35-pound ... 
+		<p>
+		<a href="news.php?item=11">click for more</a>
+		<hr />		<h1>Much more than a pole barn</h1>
+		<p>
+						
+			 ... 
+		<p>
+		<a href="news.php?item=15">click for more</a>
+		<hr />		<h1>Replacement Windows</h1>
+		<p>
+						
+			Come to Hoge Lumber Company or&nbsp;phone 419-753-2263.&nbsp; We're ... 
+		<p>
+		<a href="news.php?item=14">click for more</a>
+		<hr />		<h1>Phone or Fax Difficulties?</h1>
+		<p>
+						
+			
+
+
+If you have experienced difficulty making or receiving long ... 
+		<p>
+		<a href="news.php?item=18">click for more</a>
+		<hr />		<h1>Hoge Lumber on TV</h1>
+		<p>
+						
+			Homegrown, World Known part 3
+Did you see Hoge Lumber featured on ... 
+		<p>
+		<a href="news.php?item=19">click for more</a>
+		<hr />		
+		
+	</div>
+	<img src="images/news_footer.jpg" width="174" height="27" style="margin-top: -10px;" />	
+	<a href="http://www.hoge.compages/01_affiliations.php"><img style="margin-left: -3px;" src="images/side_affil.jpg" /></a>			
+</div>
+<div class="index_text_area">
+	<p>
+<table cellspacing="1" cellpadding="1" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="475">
+            <p><font color="#000000" size="2"><font color="#003366"><strong><font size="3">Welcome to Hoge Lumber Company</font></strong></font></font></p>
+            <p><font color="#000000" size="2"><img height="215" alt="" width="470" src="http://www.hoge.com//userFiles/image/welcome03.jpg" /></font></p>
+            <p align="justify"><font color="#000000" size="2">Across four generations of a family&rsquo;s commitment and capability, Hoge Lumber Company has produced a wide spectrum of superior quality hardwood products&nbsp;for discriminate buyers in the United States and throughout the world.<br />
+            <br />
+            Nestled in the heart of America&rsquo;s abundant hardwood country, the company combines an entire community&rsquo;s pride of craftsmanship with modern technologies to create a multitude of small, medium and massive configurations from white oak, red oak, maple, ash, walnut and other prized hardwoods.&nbsp; There is no specification in size, shape, quantity, or quality which lies outside the Hoge production ability.</font></p>
+            <p align="justify"><font color="#000000" size="2">Over time, we have grown to several divisions that provide the highest quality products and services to our clients, maintaining our&nbsp;focus to build trustworthy relationships&nbsp;that will last many years into the future.&nbsp; That's why we've been around for over 100 years.&nbsp; Today we have a complete Millworks Division, Hoge Commercial Buidings, New Homes and Remodeling, Historical Products, and the Hoge Brush Company.&nbsp; If you have a special need, please ask one of our associates what Hoge can do to serve you.<br />
+            </font></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<p><hr width="100%" size="2" />
+<table cellspacing="5" cellpadding="5" width="100%" border="0">
+    <tbody>
+        <tr>
+            <td width="280">
+            <p align="justify"><font color="#000000" size="2"><font color="#003366"><strong><font size="3">Hoge Brush Company</font><br />
+            </strong></font><br />
+            </font><font color="#000000" size="2">In 1939, the old New Knoxville School was converted into a factory to make brushes.&nbsp; Just like the building that houses Hoge Brush Company, the brushes themselves are &quot;old school&quot;.&nbsp; Their traditional designs and solid construction have resulted in time tested, high performance sweeping tools.&nbsp; </font></p>
+            <p align="justify"><font color="#000000" size="2">Well known and highly regarded within the brush industry, these superior quality push brooms and maintenance brushes are now available to you...<br />
+            <br />
+            <a href="http://www.hoge.com/pages/04A_brush_block.php">Learn More....</a><br />
+            </font></p>
+            <p align="justify">&nbsp;</p>
+            <p align="justify">&nbsp;</p>
+            </td>
+            <td align="center"><img class="" height="172" alt="" width="200" align="left" src="http://www.hoge.com//userFiles/image/home_brushco.jpg" /></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<h2>&nbsp;</h2></div>
+	</div>
+	<div id="left_col">
+		<img src="http://www.hoge.com/images/menu_header.jpg" />
+		<a id="aboutus_button" onclick="showHide('mymenu1', 'aboutus', 150)"></a>
+		<div id="mymenu1" class="hide">
+			<div class="sub"><ul>
+				<li><a href="http://www.hoge.com/pages/01_history.php">History</a></li><li><a href="http://www.hoge.com/pages/01_difference.php">The Hoge Difference</a></li><li><a href="http://www.hoge.com/pages/01_affiliations.php">Industry Affiliations</a></li><li><a href="http://www.hoge.com/pages/01_links.php">Helpful Links</a></li><li><a href="http://www.hoge.com/pages/01_privacy.php">Privacy Statement</a></li>			</ul></div>
+		</div>
+		<a id="products_button" onclick="showHide('mymenu2', 'products', 180)"></a>
+		<div id="mymenu2" class="hide">
+			<div class="sub"><ul>
+				<li><a href="http://www.hoge.com/pages/02_architecturalmillwork.php">Architectural Millwork<!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--><ul><li><a href="http://www.hoge.com/pages/02A_healthcare.php">Health Care</a></li><li><a href="http://www.hoge.com/pages/02A_educational.php">Educational</a></li><li><a href="http://www.hoge.com/pages/02A_commercial.php">Commercial/Institutional</a></li></ul><!--[if lte IE 6]></td></tr></table></a><![endif]--><li><a href="http://www.hoge.com/pages/02_custombuildings.php">Hoge Buildings<!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--><ul><li><a href="http://www.hoge.com/pages/02B_lightcommercial.php">Light Commercial</a></li><li><a href="http://www.hoge.com/pages/02B_machinerystrorage.php">Machinery & Storage</a></li><li><a href="http://www.hoge.com/pages/02B_agricultural.php">Agricultural</a></li><li><a href="http://www.hoge.com/pages/02B_townandcountry.php">Town & Country</a></li><li><a href="http://www.hoge.com/pages/02B_constr_benefits.php">Construction Benefits</a></li></ul><!--[if lte IE 6]></td></tr></table></a><![endif]--><li><a href="http://www.hoge.com/pages/02_customhomes.php">Custom Homes<!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--><ul><li><a href="http://www.hoge.com/pages/02C_newhomes.php">New Homes</a></li><li><a href="http://www.hoge.com/pages/02C_remodeling.php">Remodeling</a></li></ul><!--[if lte IE 6]></td></tr></table></a><![endif]--><li><a href="http://www.hoge.com/pages/02_historicalstructures.php">Historical Structures<!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--><ul><li><a href="http://www.hoge.com/pages/02D_fortscanalboatsmills.php">Forts, Canal Boats, Mills</a></li><li><a href="http://www.hoge.com/pages/02D_coveredbridges.php">Covered Bridges</a></li><li><a href="http://www.hoge.com/pages/02D_barnrestoration.php">Barn Restoration</a></li></ul><!--[if lte IE 6]></td></tr></table></a><![endif]--><li><a href="http://www.hoge.com/pages/02_hardwoodmanufacturing.php">Hardwood Manufacturing<!--[if IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--><ul><li><a href="http://www.hoge.com/pages/02F_components.php">Components / Dimension</a></li><li><a href="http://www.hoge.com/pages/02F_bowlingalleys.php">Bowling Lanes</a></li><li><a href="http://www.hoge.com/pages/bowling_lane_accessories.php">Bowling Lane Accessories</a></li><li><a href="http://www.hoge.com/pages/02F_recreationalfloors.php">Recreational Floors</a></li></ul><!--[if lte IE 6]></td></tr></table></a><![endif]--><li><a href="http://www.hoge.com/pages/02_shelterhouses.php">Shelter Houses</a></li>			</ul></div>
+		</div>
+		<a id="process_button" onclick="showHide('mymenu3', 'process', 150)"></a>
+		<div id="mymenu3" class="hide">
+			<div class="sub"><ul>
+				<li><a href="http://www.hoge.com/pages/03A_project_eval.php">Project Evaluation</a></li><li><a href="http://www.hoge.com/pages/03B_design_services.php">Design Services</a></li><li><a href="http://www.hoge.com/pages/03C_manufacturing.php">Manufacturing</a></li><li><a href="http://www.hoge.com/pages/03D_shipping.php">Shipping/Installation</a></li><li><a href="http://www.hoge.com/pages/03E_project_management.php">Project Management</a></li>			</ul></div>	
+		</div>
+		<a id="store_button" onclick="showHide('mymenu4', 'store', 60)"></a>
+		<div id="mymenu4" class="hide">
+			<div class="sub"><ul>
+				<li><a href="http://www.hoge.com/pages/04A_brush_block.php">Brushes & Brooms</a></li><li><a href="http://www.hoge.com/pages/04B_ccessories.php">Handle and Braces</a></li>			</ul></div>	
+		</div>
+		<a id="request_button" onclick="showHide('mymenu5', 'request', 60)"></a>
+		<div id="mymenu5" class="hide">
+			<div class="sub"><ul>
+				<li><a href="http://www.hoge.com/pages/05A_request_for_quote.php">Request for Quote/Info</a></li><li><a href="http://www.hoge.com/pages/05C_brochure_pdf.php">Brochures (PDFs)</a></li>			</ul></div>	
+		</div>
+		<a id="contact_button" onclick="showHide('mymenu6', 'contact', 90)"></a>
+		<div id="mymenu6" class="hide">
+			<div class="sub"><ul>
+				<li><a href="http://www.hoge.com/pages/06A_address.php">Map & Directions</a></li><li><a href="http://www.hoge.com/pages/06B_emaillistofdept.php">email, phone, mail, deliveries</a></li><li><a href="http://www.hoge.com/pages/06D_past_items.php">Past News Items</a></li>			</ul></div>	
+		</div>
+		<!--<img src="http://www.hoge.com/images/main_menu_bottom.jpg" width="174" height="28" />//-->
+		<div class="search">
+			<form style="margin: 0px; padding: 0px;" method="get" action="http://www.hoge.com/search.php">
+
+				<input id="search_text" name="s" type="text" />
+				<input id="search_submit" type="submit" value="" />
+			</form>
+		</div>
+				<a href="http://www.hoge.com/pages/05A_request_for_quote.php"><img style="margin-left: -4px;" src="http://www.hoge.com/images/side_request.jpg" /></a>
+								<a href="http://www.hoge.com/store/store.php"><img style="margin-left: -4px;" src="http://www.hoge.com/images/side_store.jpg" /></a>
+			</div>
+</div>
+<div id="foot" class="wrapper">
+	<span>
+		<a href="http://www.hoge.com">Home</a> | 
+		<a href="http://www.hoge.com/pages/01_history.php">About Us</a> | 
+		<a href="http://www.hoge.com/pages/02_architecturalmillwork.php">Products Departments</a> | 
+		<a href="http://www.hoge.com/pages/03A_project_eval.php">Our Process</a> | 
+		<a href="http://www.hoge.com/store/store.php">The Hoge Store</a> | 
+		<a href="http://www.hoge.com/pages/05A_request_for_quote.php">Request for Quote/Info</a> | 
+		<a href="http://www.hoge.com/pages/06A_address.php">Contact Us</a> | 
+		<a href="http://www.hoge.com">Privacy Policy</a> | 
+		<a href="http://www.hoge.com">Site Map</a> | 
+		<a href="http://www.leapsmart.com">Website Design</a>
+	</span><br />
+	<span> &copy; Copyright 2008 All Rights Reserved </span>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6351280-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
