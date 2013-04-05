@@ -12,11 +12,11 @@
 ".option": {
     top: '5px',
     width: '90%',
+    textAlign: "left",
     font: {
         fontSize: '18dp',
         fontWeight: 'bold'
     },
-    textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT
 },
 ".frame": {
     top: '10dp',

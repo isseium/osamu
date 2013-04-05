@@ -50,7 +50,7 @@ nextQuestion();
 
 
 // 回答について採点する関数
-function score_anser(e){
+function score_answer(e){
     if(e.source.titleid == right_answer){
         resultController.right();
     }else{

@@ -5,9 +5,9 @@
                 <Label id="question" />
             </Label>
         </View>
-        <Button id="option1" class="option" title="" titleid="1" onClick="score_anser" />
-        <Button id="option2" class="option" title="" titleid="2" onClick="score_anser" />
-        <Button id="option3" class="option" title="" titleid="3" onClick="score_anser" />
-        <Button id="option4" class="option" title="" titleid="4" onClick="score_anser" />
+        <Button id="option1" class="option" title="" titleid="1" onClick="score_answer" />
+        <Button id="option2" class="option" title="" titleid="2" onClick="score_answer" />
+        <Button id="option3" class="option" title="" titleid="3" onClick="score_answer" />
+        <Button id="option4" class="option" title="" titleid="4" onClick="score_answer" />
     </Window>
 </Alloy>
