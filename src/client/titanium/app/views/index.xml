@@ -2,7 +2,10 @@
     <Window class="container">
         <NavigationGroup id="nav" platform="ios">
             <Window id="win" title="震災のキオク">
-                <ImageView image="" />
+                <!--
+                <ImageView id="establish_map" />
+                -->
+                <WebView id="establish_map" />
             </Window>
         </NavigationGroup>
     </Window>
