@@ -1,0 +1,11 @@
+<Alloy>
+    <Window id="_resultWindow">
+        <View class="container" onClick="closeWindow">
+        </View>
+        <Label id="wrong_mark">×</Label>
+        <Label id="right_mark">○</Label>
+        <Label class="frame">
+            <Label id="description" />
+        </Label>
+    </Window>
+</Alloy>

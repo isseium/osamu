@@ -1,0 +1,36 @@
+"#resultWindow": {
+    translucent: "true",
+},
+".container": {
+    backgroundColor: "black",
+    opacity: 0.1,
+},
+"#wrong_mark": {
+    color: "#0000ff",
+    top: "3px",
+    font: {
+        fontSize: '224dp',
+        fontWeight: 'bold'
+    },
+    visible: "false",
+},
+"#right_mark": {
+    color: "#ff0000",
+    top: "45px",
+    font: {
+        fontSize: '172dp',
+        fontWeight: 'bold'
+    },
+    visible: "false",
+},
+"#description": {
+    width: "90%",
+},
+".frame": {
+    bottom: '10px',
+    opacity: 0.75,
+    width: '90%',
+    height: '42%',
+    backgroundColor: 'gray',
+    borderRadius: 5,
+},

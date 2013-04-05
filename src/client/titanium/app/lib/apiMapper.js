@@ -82,18 +82,16 @@ ApiMapper.prototype.accessApi = function(method, uri, param, callback_success, c
 
         return true;
 };
-ApiMapper.prototype.badge = function (callback_success, callback_failure){
-    return this.accessApi('GET', this.apiEndpoint + "badge/n0bisuke.json", {}, callback_success, callback_failure);
+ApiMapper.prototype.badge = function (params, callback_success, callback_failure){
+    return this.accessApi('GET', this.apiEndpoint + "badge/" + params.user_id + ".json", {}, callback_success, callback_failure);
 }
 
+ApiMapper.prototype.question = function (params, callback_success, callback_failure){
+    return this.accessApi('GET', this.apiEndpoint + "question/" + params.user_id + ".json", {}, callback_success, callback_failure);
+}
 
-ApiMapper.prototype.spotcheckinApi = function (token, spot_id, comment, callback_success, callback_failure){
-    return this.accessApi(
-        'POST',
-        this.apiEndpoint + "/spot/checkin.json",
-        {token : token, spot_id : spot_id, comment : comment},
-        callback_success,
-        callback_failure);
+ApiMapper.prototype.establish = function (params, callback_success, callback_failure){
+    return this.accessApi('GET', this.apiEndpoint + "establish/" + params.user_id + ".json", {}, callback_success, callback_failure);
 }
 
 exports.ApiMapper = ApiMapper;

@@ -3,9 +3,11 @@ var apiMapper = new ApiMapper();
 
 // Badgeを取得
 apiMapper.badge(
+    {
+        user_id: Alloy.Globals.user.user_id 
+    },
     function(e){
         var response = JSON.parse(this.responseText);
-
 
         var items = new Array();
         for(var i=0; i<response.length; i++){

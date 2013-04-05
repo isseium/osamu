@@ -1,0 +1,8 @@
+".container": {
+    backgroundColor: "black",
+    opacity: 0.5,
+},
+"#activityIndicator": {
+    color: "black",
+    indicatorColor: "black", 
+}

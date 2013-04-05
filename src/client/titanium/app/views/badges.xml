@@ -1,22 +1,5 @@
 <Alloy>
     <Window class="container">
         <DashboardView id="dashboard" />
-        
-        <!--
-        <ScrollView id="table">
-            <View class="row">
-                <Label class="frame">
-                    <ImageView class="badge_picture" image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
-                </Label>
-                <Label class="title">のびすけバッジ</Label>
-            </View>
-            <View class="row">
-                <Label class="frame">
-                    <ImageView class="badge_picture" image="http://gyazo.com/32575490e7c2d1747cbbf08c1c02f483.png?1364958670" />
-                </Label>
-                <Label class="title">のびすけバッジ</Label>
-            </View>
-        </ScrollView>
-        -->
     </Window>
 </Alloy>
