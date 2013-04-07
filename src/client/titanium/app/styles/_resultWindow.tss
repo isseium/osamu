@@ -5,32 +5,44 @@
     backgroundColor: "black",
     opacity: 0.1,
 },
+".message_container": {
+    height: '100%',
+    layout:'vertical',
+},
+".result_container": {
+    height: '50%',
+},
+".touch_container": {
+    height: '100%',
+    opacity: 0.1,
+},
+".description_container": {
+    top: '20px',
+    height: '50%',
+    width: "90%",
+},
 "#wrong_mark": {
     color: "#0000ff",
-    top: "3px",
     font: {
-        fontSize: '224dp',
+        fontSize: '224px',
         fontWeight: 'bold'
     },
     visible: "false",
 },
 "#right_mark": {
+    top: '25%',
     color: "#ff0000",
-    top: "45px",
     font: {
-        fontSize: '172dp',
+        fontSize: '172px',
         fontWeight: 'bold'
     },
     visible: "false",
 },
-"#description": {
-    width: "90%",
-},
 ".frame": {
-    bottom: '10px',
+    top: '5px',
     opacity: 0.75,
-    width: '90%',
-    height: '42%',
+    height: '85%',
+    width: '100%',
     backgroundColor: 'gray',
     borderRadius: 5,
 },

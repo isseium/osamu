@@ -1,11 +1,18 @@
 <Alloy>
     <Window id="_resultWindow">
-        <View class="container" onClick="closeWindow">
+        <View class="container">
         </View>
-        <Label id="wrong_mark">×</Label>
-        <Label id="right_mark">○</Label>
-        <Label class="frame">
-            <Label id="description" />
-        </Label>
+        <View class="message_container">
+            <View class="result_container">
+                <Label id="wrong_mark">×</Label>
+                <Label id="right_mark">○</Label>
+            </View>
+            <View class="description_container">
+                <Label class="frame">
+                    <Label id="description" />
+                </Label>
+            </View>
+        </View>
+        <View class="touch_container" onClick="closeWindow" />
     </Window>
 </Alloy>

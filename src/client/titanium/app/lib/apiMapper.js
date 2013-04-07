@@ -94,4 +94,12 @@ ApiMapper.prototype.establish = function (params, callback_success, callback_fai
     return this.accessApi('GET', this.apiEndpoint + "establish/" + params.user_id + ".json", {}, callback_success, callback_failure);
 }
 
+ApiMapper.prototype.answer = function (params, callback_success, callback_failure){
+    return this.accessApi('POST', this.apiEndpoint + "answer.json", params, callback_success, callback_failure);
+}
+
+ApiMapper.prototype.useradd = function (params, callback_success, callback_failure){
+    return this.accessApi('POST', this.apiEndpoint + "useradd.json", params, callback_success, callback_failure);
+}
+
 exports.ApiMapper = ApiMapper;

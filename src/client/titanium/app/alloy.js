@@ -12,6 +12,7 @@
 
 // アプリケーション設定
 Alloy.Globals.app = new Object();
+Alloy.Globals.app.img_endpoint = "http://osamu-test.ap01.aws.af.cm/";
 Alloy.Globals.app.api_endpoint = "http://osamu-test.ap01.aws.af.cm/rsk/zishin/";
 
 // ユーザ設定

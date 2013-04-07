@@ -2,6 +2,8 @@ var Alloy = require("alloy"), _ = Alloy._, Backbone = Alloy.Backbone;
 
 Alloy.Globals.app = new Object;
 
+Alloy.Globals.app.img_endpoint = "http://osamu-test.ap01.aws.af.cm/";
+
 Alloy.Globals.app.api_endpoint = "http://osamu-test.ap01.aws.af.cm/rsk/zishin/";
 
 Alloy.Globals.user = new Object;

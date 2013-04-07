@@ -1,13 +1,18 @@
 var apiMapper = new ApiMapper();
 
+exports.setNavigation = function(nav, current){
+    $.nav = nav;
+    $.current = current;
+}
+
 // Loading 画面 
 var loadingWindow = Alloy.createController('_loadingWindow').getView();
 
 // 結果画面 
 var resultController = Alloy.createController('_resultWindow');
 
-// 正答番号を保持する変数
-var right_answer = 0;
+// 問題情報を管理する変数
+var question;
 
 // 問題を出題する関数
 var nextQuestion = function(){
@@ -21,6 +26,20 @@ var nextQuestion = function(){
         function(e){
             var response = JSON.parse(this.responseText);
 
+            // 問題終了チェック
+            if(response.Question == "finish"){
+                var dialog = Titanium.UI.createAlertDialog();
+                dialog.setTitle('全問正解しました');
+                dialog.setMessage('震災の記憶を忘れずに日々を過ごしましょう！'); 
+                dialog.show();
+
+                // インディケータクローズ
+                loadingWindow.close();
+                $.nav.close($.getView());
+
+                return;
+            }
+
             // 問題文セット
             $.question.text = response.Question.question;
 
@@ -30,8 +49,8 @@ var nextQuestion = function(){
             $.option3.title = "3. " + response.Question.option3;
             $.option4.title = "4. " + response.Question.option4;
 
-            // 正答セット
-            right_answer = response.Question.right_answer;
+            // 問題情報セット 
+            question = response.Question;
 
             // 解説セット
             resultController.setDescription(response.Question.description);
@@ -51,13 +70,28 @@ nextQuestion();
 
 // 回答について採点する関数
 function score_answer(e){
-    if(e.source.titleid == right_answer){
+    if(e.source.titleid == question.right_answer){
         resultController.right();
     }else{
         resultController.wrong();
     }
-
-    var resultWindow = resultController.getView();
-    resultWindow.addEventListener('close', nextQuestion);
-    resultWindow.open();
+    
+    // サーバに送信
+    apiMapper.answer(
+        {
+            user_id: Alloy.Globals.user.user_id,
+            question_id: question.id,
+            option: e.source.titleid,
+        },
+        function(){
+            // 結果を表示
+            var resultWindow = resultController.getView();
+            resultWindow.removeEventListener('close', nextQuestion);
+            resultWindow.addEventListener('close', nextQuestion);
+            resultWindow.open();
+        },
+        function(){
+            alert('通信エラーが発生しました');
+        }
+    );
 };

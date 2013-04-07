@@ -1,5 +1,5 @@
-var ApiMapper = require("apiMapper").ApiMapper;
 var apiMapper = new ApiMapper();
+
 
 // Badgeを取得
 apiMapper.badge(
@@ -10,8 +10,17 @@ apiMapper.badge(
         var response = JSON.parse(this.responseText);
 
         var items = new Array();
-        for(var i=0; i<response.length; i++){
+        var badge_count = response.length || 0;
+
+        Ti.API.info(badge_count);
+        if(badge_count == 0){
+            Ti.API.info('No badges');
+            $.message.text = "取得したバッジはありません";
+        }
+
+        for(var i=0; i<badge_count; i++){
             // alert(response[i].Badge.image_url);
+            response[i].Badge.image_url = Alloy.Globals.app.img_endpoint + response[i].Badge.image_url;
             var window = Alloy.createController('_badge', response[i].Badge);
             items.push(window.getDashboardItem());
         }

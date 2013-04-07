@@ -1,5 +1,6 @@
 <Alloy>
     <Window class="container">
         <DashboardView id="dashboard" />
+        <Label id="message" />
     </Window>
 </Alloy>
