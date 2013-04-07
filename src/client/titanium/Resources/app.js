@@ -1,14 +1,18 @@
 var Alloy = require("alloy"), _ = Alloy._, Backbone = Alloy.Backbone;
 
-Alloy.Globals.app = new Object;
-
-Alloy.Globals.app.img_endpoint = "http://osamu-test.ap01.aws.af.cm/";
-
-Alloy.Globals.app.api_endpoint = "http://osamu-test.ap01.aws.af.cm/rsk/zishin/";
+Ti.include("app_config.js");
 
 Alloy.Globals.user = new Object;
 
-Alloy.Globals.user.user_id = "n0bisuke";
+Alloy.Globals.app.ymap = {
+    lat: 38.2,
+    lon: 140.6,
+    zoom: 9,
+    height: 1600,
+    width: 600,
+    mode: "blankmap",
+    paint_color: "00CC66"
+};
 
 var ApiMapper = require("apiMapper").ApiMapper;
 

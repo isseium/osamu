@@ -24,7 +24,7 @@ if(! Ti.App.Properties.hasProperty('user_id')){
 
 // navbar の設定
 var button_badges = Ti.UI.createButton({title:'バッジ一覧'});
-var button_start_quiz = Ti.UI.createButton({title:'学習'});
+var button_start_quiz = Ti.UI.createButton({title:'復興クイズ'});
 
 // 削除ボタン
 var button_truncate = Titanium.UI.createButton({
@@ -33,7 +33,7 @@ var button_truncate = Titanium.UI.createButton({
 button_truncate.addEventListener('click', function(){
     var alertDialog = Titanium.UI.createAlertDialog({
         title: 'リセット',
-        message: '学習記録、バッジなどすべての情報をリセットしますか？',
+        message: '成績、バッジなどすべての情報をリセットしますか？',
         buttonNames: ['OK','Cancel'],
         cancel: 1
     });
@@ -61,7 +61,7 @@ button_badges.addEventListener('click', function(){
 button_start_quiz.addEventListener('click', function(){
     var controller_quiz = Alloy.createController('quiz', {});
     var window_quiz = controller_quiz.getView();
-    window_quiz.title = "震災を忘れない";
+    window_quiz.title = "復興クイズ";
     controller_quiz.setNavigation($.nav, window_quiz);
     $.nav.open(window_quiz);
 });
@@ -80,7 +80,7 @@ $.win.addEventListener('focus', function(){
 
             var param_styles = new Array();
             for( var i=0; i<response.length; i++){
-                param_styles.push("bm.p." + response[i].Establish.city_id + ":99ccff");
+                param_styles.push("bm.p." + response[i].Establish.city_id + ":" + Alloy.Globals.app.ymap.paint_color);
             }
 
             var style = "style=bm";
@@ -89,7 +89,15 @@ $.win.addEventListener('focus', function(){
             }
 
             // 地図画像取得 TODO: あとで外部設定ファイル化
-            var image_url = "http://map.olp.yahooapis.jp/OpenLocalPlatform/V1/static?appid=buxd.Puxg662idT4Kd8LGdoNWBKywhPDbp4dfPupYfrbu.0ICiES_bkM9iImHA--&lat=38.2&lon=140.6&z=9&height=1600&width=600&mode=blankmap&" + style;
+            var image_url = "http://map.olp.yahooapis.jp/OpenLocalPlatform/V1/static?"
+                    + "appid=" + Alloy.Globals.app.yahoo_appid
+                    + "&lat=" + Alloy.Globals.app.ymap.lat
+                    + "&lon=" + Alloy.Globals.app.ymap.lon
+                    + "&z=" + Alloy.Globals.app.ymap.zoom
+                    + "&height=" + Alloy.Globals.app.ymap.height
+                    + "&width=" + Alloy.Globals.app.ymap.width
+                    + "&mode=" + Alloy.Globals.app.ymap.mode
+                    + "&" + style;
             Ti.API.debug(image_url);
             $.establish_map.image = image_url;
             $.establish_map.url = image_url;

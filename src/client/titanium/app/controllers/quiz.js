@@ -30,7 +30,7 @@ var nextQuestion = function(){
             if(response.Question == "finish"){
                 var dialog = Titanium.UI.createAlertDialog();
                 dialog.setTitle('全問正解しました');
-                dialog.setMessage('震災の記憶を忘れずに日々を過ごしましょう！'); 
+                dialog.setMessage('震災の記憶を忘れず、復興をすすめていきましょう！'); 
                 dialog.show();
 
                 // インディケータクローズ

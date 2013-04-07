@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>net.ikmz.osamu</id>
-	<name>osamu</name>
+	<name>FuccoStep</name>
 	<version>1.0</version>
-	<publisher>not specified</publisher>
+	<publisher>n0bisuke, isseium</publisher>
 	<url/>
-	<description>not specified</description>
-	<copyright>not specified</copyright>
+	<description>東日本大震災の復興のあゆみをクイズを通じて学び、復興を広く知っていただくことを目的とした学習アプリです</description>
+	<copyright>Copyright 2013 n0bsuke, isseium</copyright>
 	<icon>appicon.png</icon>
 	<persistent-wifi>false</persistent-wifi>
 	<prerendered-icon>false</prerendered-icon>

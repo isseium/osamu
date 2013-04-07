@@ -10,14 +10,22 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-// アプリケーション設定
-Alloy.Globals.app = new Object();
-Alloy.Globals.app.img_endpoint = "http://osamu-test.ap01.aws.af.cm/";
-Alloy.Globals.app.api_endpoint = "http://osamu-test.ap01.aws.af.cm/rsk/zishin/";
+// アプリケーション個別設定を読み込み
+Ti.include("app_config.js");
 
 // ユーザ設定
 Alloy.Globals.user = new Object();
-Alloy.Globals.user.user_id = 'n0bisuke';        // TODO: あとで変える
+
+// グローバル設
+Alloy.Globals.app.ymap = {
+    lat: 38.2,
+    lon: 140.6,
+    zoom: 9,
+    height: 1600,
+    width: 600,
+    mode: "blankmap",
+    paint_color: "00CC66",
+};
 
 /**
  * ライブラリロード

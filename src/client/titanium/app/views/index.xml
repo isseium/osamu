@@ -1,7 +1,7 @@
 <Alloy>
     <Window class="container">
         <NavigationGroup id="nav" platform="ios">
-            <Window id="win" title="震災のキオク">
+            <Window id="win" title="復興すてっぷ">
                 <!--
                 <ImageView id="establish_map" />
                 -->
